@@ -85,7 +85,3 @@ pytest -v
 👨‍💻 Author
 
 Ahad
-
-
-## 🧩 Project Structure
-
