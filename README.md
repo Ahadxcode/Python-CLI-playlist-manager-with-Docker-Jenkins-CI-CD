@@ -1,24 +1,91 @@
-# Music Playlist Manager (Python) — with Docker & Jenkins CI/CD
+# 🎵 Python CLI Playlist Manager — CI/CD with Docker & Jenkins
 
-A simple command‑line **playlist manager** written in Python that lets you add, list, search, shuffle, and export songs. The project is packaged with a **Dockerfile**, a production‑style **Jenkins pipeline (Jenkinsfile)**, basic **tests**, and deployment via **Docker Compose**.
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+![Jenkins](https://img.shields.io/badge/CI%2FCD-Jenkins-red?logo=jenkins)
+![Build](https://img.shields.io/badge/Build-Automated-success?logo=github-actions)
 
-> This repository is intended as a **learning/portfolio project** to demonstrate code organization and CI/CD design.
-
----
-
-## ✨ Features
-- Add songs (title, artist, album, duration) and persist to **JSON**.
-- List, search, and shuffle‑play from your playlist.
-- Export to **CSV**.
-- Containerized with **Docker**; CI/CD pipeline via **Jenkins**.
+A lightweight **Python Command Line Interface (CLI) Playlist Manager** project that demonstrates **CI/CD automation using Jenkins and Docker**.  
+It covers the entire development lifecycle — from source code to build, test, containerization, and automated deployment — showcasing real-world **DevOps and Engineering Systems** practices.
 
 ---
 
-## 📦 Tech Stack
-- **Python 3.12** (standard library only)
-- **Pytest**, **Flake8** (dev tooling)
-- **Docker** (containerization)
-- **Jenkins** (CI/CD), **Docker Hub** (registry)
-- **Docker Compose** (deployment)
+## 🖼️ Repository Overview
+
+🔗 **GitHub Repository:** [Python-CLI-playlist-manager-with-Docker-Jenkins-CI-CD](https://github.com/Ahadxcode/Python-CLI-playlist-manager-with-Docker-Jenkins-CI-CD)
+
+![Repository Screenshot](https://github.com/Ahadxcode/Python-CLI-playlist-manager-with-Docker-Jenkins-CI-CD/blob/main/screenshot.png)
 
 ---
+
+## 🚀 Features
+
+- 🎧 Create, list, shuffle, and export playlists
+- 🧩 Fully **Dockerized** app for consistent deployments
+- ⚙️ **Jenkins CI/CD pipeline** automates build → test → deploy
+- 🧪 Integrated **unit testing (pytest)** and **linting (flake8)**
+- 📁 Uses JSON/CSV for playlist persistence
+- 🔄 Can be extended to web/ML-based projects (MLOps-ready)
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Tools |
+|-----------|--------|
+| Language | Python 3.12 |
+| CI/CD | Jenkins |
+| Containerization | Docker, Docker Compose |
+| Version Control | Git & GitHub |
+| Testing & Quality | Pytest, Flake8 |
+| Deployment | Docker Compose |
+
+---
+## 🧩 Project Structure
+.
+├── tests/ # Unit tests
+│ └── test_playlist.py
+├── playlist.py # Core CLI logic
+├── Dockerfile # Build container image
+├── Jenkinsfile # Jenkins pipeline configuration
+├── docker-compose.deploy.yml # Docker Compose for deployment
+└── README.md
+
+
+---
+
+## 🏗️ CI/CD Pipeline Workflow
+
+| Stage | Description |
+|--------|-------------|
+| **1️⃣ Checkout** | Fetch code from GitHub |
+| **2️⃣ Lint & Test** | Run Flake8 and Pytest to ensure quality |
+| **3️⃣ Build Docker Image** | Create image using Dockerfile |
+| **4️⃣ Push Image (Optional)** | Publish to Docker Hub |
+| **5️⃣ Deploy** | Run the container via Docker Compose |
+| **6️⃣ Cleanup** | Post-build cleanup and notifications |
+
+> 💡 Example: Each commit triggers a Jenkins build → runs tests → builds Docker image → deploys automatically.
+
+---
+
+## 💻 Quick Start Guide
+
+### 🔹 Run Locally
+```bash
+python playlist.py
+
+🔹 Run with Docker
+docker build -t playlist-cli .
+docker run --rm playlist-cli
+
+🔹 Run Tests
+pytest -v
+
+👨‍💻 Author
+
+Ahad
+
+
+## 🧩 Project Structure
+
